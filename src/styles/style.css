@@ -1,0 +1,26 @@
+.section01 {
+
+  header{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+
+    .group{
+      display: flex;
+    }
+  }
+
+  
+
+  
+}
+
+
+
+.section02{
+
+  height: 1300px;
+  /* background-image: url(); */
+}
