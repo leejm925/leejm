@@ -163,8 +163,8 @@
 
 .section03{
   background-color: #ebe5de;
-  /* height: 400vh; */
-  height: 200vh;
+  height: 400vh;
+  /* height: 200vh; */
 
   .box03{
     position: relative;
@@ -190,6 +190,7 @@
     top: 50%;
     translate:-50% -50%;
     transform: scale(0.9);
+    opacity: 0;
   }
 
 
@@ -207,7 +208,7 @@
     position: relative;
   }
 
-  .main04{
+  /* .main04{
     transform: scale(0.85);
     position: absolute;
     right: 0;
@@ -220,7 +221,7 @@
     left: 7%;
     top: 40%;
 
-  }
+  } */
 
   .black01{
     position: absolute;

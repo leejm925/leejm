@@ -69,15 +69,54 @@ img_tl.to('.small_image .image03',{x:200,y:300},0)
 
 
 
+const 정민 = gsap.timeline();
+
+정민.to('.main03',{scale:1})
+정민.to('.bgsub',{opacity:1},'-=0.2')
+
+ScrollTrigger.create({
+  trigger: '.box03',
+  start: 'top top',
+  end: '+=2000',
+  animation: 정민,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
 
 
 ScrollTrigger.create({
-  trigger: '.main03',
+  trigger: '.section07',
   start: 'top top',
-  end: '+=500',
-  animation: gsap.to('.main03',{scale:1}),
+  end: '+=3000',
+  // animation: 정민,
   pin: true,
   // pinSpacing: false,
+  onUpdate:({progress})=>{
+  
+    
+    let i = 0;
+  
+    if(progress >= 0 && progress <= 0.33333){
+      i = 0;
+    }
+  
+    if(progress >= 0.33334 && progress <= 0.66666){
+      i = 1;
+      
+    }
+  
+    if(progress >= 0.66667 && progress <= 1){
+      i = 2;
+      
+    }
+  
+
+    gsap.to('.main07',{
+      x: -300 * i
+    })
+  },
   markers: true,
   scrub: true,
 })
