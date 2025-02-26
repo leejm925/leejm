@@ -26,7 +26,7 @@ tl.to('.backgroundimage',{
   opacity:0.5,
 })
 tl.to('.backgroundimage',{
-  scale:10,
+  scale:3,
   duration:3
 },'-=0.5')
 tl.to('.side',{
@@ -39,16 +39,16 @@ const img_tl = gsap.timeline();
 img_tl.to('.small_image .image02',{x:300})
 img_tl.to('.small_image .image03',{x:200,y:300},0)
 
-ScrollTrigger.create({
-  trigger: '.small_image',
-  start: 'top top',
-  end: '+=3000',
-  animation: img_tl,
-  pin: true,
-  // pinSpacing: false,
-  markers: true,
-  scrub: true,
-})
+// ScrollTrigger.create({
+//   trigger: '.small_image',
+//   start: 'top top',
+//   end: '+=3000',
+//   animation: img_tl,
+//   pin: true,
+//   // pinSpacing: false,
+//   markers: true,
+//   scrub: true,
+// })
 
 
 
