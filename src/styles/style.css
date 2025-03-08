@@ -181,6 +181,8 @@
 
   .main03{
     transform:scale(0.4);
+    /* width: 100%;
+    height: 100%; */
 
   }
 
@@ -206,35 +208,7 @@
     height: 100vw;
     background-color: #ebe5de;
     position: relative;
-  }
-
-  /* .main04{
-    transform: scale(0.85);
-    position: absolute;
-    right: 0;
-    top: 8%;
-  }
-
-  .main05{
-    transform: scale(0.8);
-    position: absolute;
-    left: 7%;
-    top: 40%;
-
-  } */
-
-  .black01{
-    position: absolute;
-    right: 50%;
-    bottom: 35%;
-    transform: scale(0.7);
-  }
-
-  .black02{
-    position: absolute;
-    right: 0;
-    top: 46%;
-    transform: scale(0.7);
+    
   }
 
   .typo01{
@@ -247,17 +221,59 @@
 
   .vertical01{
     position: absolute;
-    left: 20%;
-    bottom: 47%;
-    transform: scale(0.85);
+    left: 8%;
+    bottom: 40%;
   }
 
   .bottom01{
     position: absolute;
     right: 5%;
-    bottom: 30%;
-    transform: scale(0.85);
+    bottom: 24%;
   }
+
+  .main04-1{
+    position: absolute;
+    right: 5%;
+    top: 12%;
+
+  }
+
+  .main04-2{
+    position: absolute;
+    left: 7%;
+    top: 80%;
+  }
+
+  .main04-3{
+    position: absolute;
+    left: 50%;
+    bottom: -115%;
+    translate:-50% -50%;
+
+  }
+
+  .black01{
+    position: absolute;
+    left: 5%;
+    bottom: 27%;
+  }
+
+  .black02{
+    position: absolute;
+    right: 5% ;
+    bottom: -42%;
+
+  }
+
+  .black03{
+    position: absolute;
+    left: 50%;
+    bottom: -110%;
+    translate:-50% -50%;
+
+  }
+
+
 
 }
 
@@ -387,23 +403,136 @@
 .section08{
   background-color: black;
   /* height: 400vh; */
-  height: 400vh;
+  height: 2030px;
   position: relative;
 
   .title08{
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 25%;
     translate:-50% -50%;
-    transform: scale(0.85);
+
   }
 
   .title-image{
     position: absolute;
-    left: 10%;
-    top: 17%;
-    transform: scale(0.75);
+    left: 5%;
+    top: 30%;
+
+  }
+
+  .bgimage8{
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    translate:-50% -50%;
+
+  }
+
+  .type8{
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    translate:-50% -50%;
 
   }
 
 }
+
+.section09{
+  background-color: #ebe5de;
+  /* height: 400vh; */
+  height: 1560px;
+  position: relative;
+
+  .bgimage9-1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+
+  }
+
+  .bgimage9-2{
+    position: absolute;
+    right: 0;
+    top: 10%;
+
+  }
+
+  .bgimage9-3{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+  }
+
+  .type9-1{
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    translate:-50% -50%;
+  }
+
+  .type9-2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+    transform: scale(0.9);
+  }
+
+  
+
+  .mainimge9-1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+  }
+
+  .mainimge9-2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+  }
+
+  .title9-1{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    translate:-50% -50%;
+  }
+
+  .title9-2{
+    position: absolute;
+    left: 50%;
+    bottom: 33%;
+    translate:-50% -50%;
+  }
+
+  .title9-3{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    translate:-50% -50%;
+  }
+
+  .title9-4{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    translate:-50% -50%;
+  }
+
+}
+
+.section10{
+  background-color: black;
+  height: 400vh;
+
+
+  
+
+}
+
