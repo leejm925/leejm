@@ -31,7 +31,6 @@
     left: 70%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.7);
   }
 
   .side{
@@ -40,7 +39,6 @@
     left: 50%;
     top: 47%;
     translate:-50% -50%;
-    transform: scale(0.87);
   }
 
   .menu{
@@ -59,7 +57,7 @@
 .section02{
   background-color: #ebe5de;
   /* height: 400vh; */
-  height: 200vh;
+  height: inherit;
   /* background-image: url(); */
 
   .small_image{
@@ -86,7 +84,6 @@
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.7);
 
   }
 
@@ -95,21 +92,18 @@
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.8);
   }
   
   .side02{
     position: absolute;
     right: -4%;
     top: -3%;
-    transform: scale(0.8);
   }
 
   .side03{
     position: absolute;
     left: -4%;
     bottom: 0;
-    transform: scale(0.8);
   }
 
   .sub02{
@@ -117,7 +111,6 @@
     left: 50%;
     bottom: 0;
     translate:-50% -50%;
-    transform: scale(0.85);
   }
 
   .sub02-2{
@@ -125,38 +118,30 @@
     left: 50%;
     top: 15%;
     translate:-50% -50%;
-    transform: scale(0.85);
   }
 
+  .cards{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+  }
   .image01{
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* translate:-50% -50%; */
-    /* transform: scale(0.8); */
     position: relative;
-    z-index: 10;
-    
-
+    z-index: 1;
 
   }
 
   .image02{
-    position: absolute;
-    left: 0;
-    top: 0;
+ 
   }
 
   .image03{
-    position: absolute;
-    left: 0;
-    top: 0;
+
   }
 
   .image04{
-    position: absolute;
-    left: 0;
-    top: 0;
+
   }
 
 }
@@ -320,6 +305,38 @@
 }
 
 
+.horizontal_section{
+  pointer-events: none;
+}
+
+.horizontal {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+}
+
+.horizontal .section {
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+
+
+.h-section02{
+  width: 200vw !important;
+}
+
+.box{
+  width: 50vw;
+  height: 50vw;
+  /* width: 100px; */
+  /* height: 100px; */
+  background: orange
+}
+
+
 .section06{
   background-color: white;
   /* height: 400vh; */
@@ -403,29 +420,42 @@
 .section08{
   background-color: black;
   /* height: 400vh; */
-  height: 2030px;
+  height: initial;
   position: relative;
+
+  .box08{
+    width: 100vw;
+    height: 100vh;
+  }
 
   .title08{
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 50%;
     translate:-50% -50%;
 
   }
 
   .title-image{
     position: absolute;
-    left: 5%;
-    top: 30%;
+
 
   }
 
-  .bgimage8{
+  .circle{
     position: absolute;
+    left: -34%;
+    top: 11%;
+    /* 
     left: 50%;
     top: 78%;
-    translate:-50% -50%;
+    translate:-50% -50%; */
+
+    clip-path: circle(5%);
+
+    img{
+      /* transform:scale(0.2) */
+    }
 
   }
 

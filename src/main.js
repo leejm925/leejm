@@ -1,13 +1,13 @@
 import "../lib/smooth";
 import "./styles/style.css";
-import { markers } from "../lib/smooth";
+import { markers, scrollbar } from "../lib/smooth";
 
 import { gsap } from "gsap";
 // import { Draggable } from "gsap/Draggable";
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// gsap.registerPlugin(ScrollTrigger,Draggable,MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger); // 최적화 
 
 // 1. 터미널 창에서 git pull 실행한다.
 // 1. 터미널 창에서 npm i 실행한다.
@@ -39,16 +39,18 @@ const img_tl = gsap.timeline();
 img_tl.to('.small_image .image02',{x:300})
 img_tl.to('.small_image .image03',{x:200,y:300},0)
 
-// ScrollTrigger.create({
-//   trigger: '.small_image',
-//   start: 'top top',
-//   end: '+=3000',
-//   animation: img_tl,
-//   pin: true,
-//   // pinSpacing: false,
-//   markers: true,
-//   scrub: true,
-// })
+
+
+ScrollTrigger.create({
+  trigger: '.small_image',
+  start: 'top top',
+  end: '+=2000',
+  animation: img_tl,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
 
 
 
@@ -117,11 +119,78 @@ ScrollTrigger.create({
       x: -300 * i
     })
   },
-  markers: true,
+  // markers: true,
   scrub: true,
 })
 
 
+
+const tl8 = gsap.timeline();
+
+tl8.to('.circle',{x:1000,rotation:360})
+tl8.to('.circle',{clipPath:'circle(100%)'})
+tl8.to('.circle img',{filter:'brightness(0.5)'})
+tl8.from('.type8',{opacity:0,y:100})
+
+
+// /* section08 */
+ScrollTrigger.create({
+  trigger: '.section08',
+  start: 'top top',
+  end: '+=3000',
+  animation: tl8,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+
+
+
+
+/* section05 */
+
+const btn = document.querySelector('.btn05');
+
+const section05 = document.querySelector('.section05');
+const y = section05.getBoundingClientRect().y;
+
+
+btn.addEventListener('click',()=>{
+
+
+  scrollbar.scrollTo(0, y, 600, {
+      callback: () => {
+
+        const sections = gsap.utils.toArray('.horizontal .section');
+
+        const end = document.querySelector('.last').getBoundingClientRect().left
+
+        const tween = gsap.to(sections,{ x: -end })
+
+        ScrollTrigger.create({
+          trigger: '.section05',
+          start: 'top top',
+          end: '+=3000',
+          animation: tween,
+          pin: true,
+          markers: true,
+          scrub: true,
+        })
+      },
+    });
+
+
+  // scrollbar.scrollTo(0, 100, 600, {
+  //   callback: () => console.log('done!'),
+  // });
+
+
+
+})
 
 
 
