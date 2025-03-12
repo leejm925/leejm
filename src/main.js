@@ -20,31 +20,47 @@ const tl = gsap.timeline();
 
 tl.to('.backgroundimage',{
   duration:5,
-  x:-300
+  x:-995
 })
 tl.to('.backgroundimage',{
   opacity:0.5,
 })
 tl.to('.backgroundimage',{
-  scale:3,
+  scale:2.7,
   duration:3
 },'-=0.5')
 tl.to('.side',{
   opacity:1,
 })
 
+tl.to('.title',{
+  scale:1.5,
+  duration:3
+})
+
+
+
+
+
+
+
+
 const img_tl = gsap.timeline();
 
-
-img_tl.to('.small_image .image02',{x:300})
-img_tl.to('.small_image .image03',{x:200,y:300},0)
+img_tl.to('.small_image .image01',{rotate:10},0)
+img_tl.to('.small_image .image02',{x:-840},0)
+img_tl.to('.small_image .image03',{x:760,y:300},0)
+img_tl.to('.small_image .image04',{x:-700,y:440},0)
+img_tl.to('.small_image .image05',{x:550,y:-360},0)
+img_tl.to('.small_image .image06',{x:750},0)
+img_tl.to('.small_image .image07',{x:-610,y:-360},0)
 
 
 
 ScrollTrigger.create({
   trigger: '.small_image',
   start: 'top top',
-  end: '+=2000',
+  end: '+=3000',
   animation: img_tl,
   pin: true,
   // pinSpacing: false,
@@ -53,6 +69,46 @@ ScrollTrigger.create({
 })
 
 
+
+
+
+
+
+const images = gsap.utils.toArray(".imagebox img");
+
+
+ScrollTrigger.create({
+  trigger: '.main04-1',
+  start: 'top top',
+  end: '+=3000',
+  // animation: img_tl,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.main04-2',
+  start: 'top top',
+  end: '+=3000',
+  // animation: img_tl,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.main04-3',
+  start: 'top top',
+  end: '+=3000',
+  // animation: img_tl,
+  pin: true,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
 
 
 
@@ -113,11 +169,23 @@ ScrollTrigger.create({
       i = 2;
       
     }
+
+    if(progress >= 1 && progress <= 1.33333){
+      i = 3;
+      
+    }
+
+
   
 
     gsap.to('.main07',{
-      x: -300 * i
+      x: -470 * i
     })
+
+    
+
+
+    
   },
   // markers: true,
   scrub: true,
@@ -127,7 +195,7 @@ ScrollTrigger.create({
 
 const tl8 = gsap.timeline();
 
-tl8.to('.circle',{x:1000,rotation:360})
+tl8.to('.circle',{x:705, y:-150, rotation:360})
 tl8.to('.circle',{clipPath:'circle(100%)'})
 tl8.to('.circle img',{filter:'brightness(0.5)'})
 tl8.from('.type8',{opacity:0,y:100})

@@ -34,10 +34,9 @@
   }
 
   .side{
-/*     opacity: 0; */
     position: absolute;
     left: 50%;
-    top: 47%;
+    top: 55%;
     translate:-50% -50%;
   }
 
@@ -59,6 +58,15 @@
   /* height: 400vh; */
   height: inherit;
   /* background-image: url(); */
+  position: relative;
+
+
+  .subtitle02{
+    right: 20%;
+    top: 30%;
+
+  }
+  
 
   .small_image{
     width: 721px;
@@ -66,7 +74,7 @@
     /* margin-top: 20%; */
     padding-top: 15%;
     /* height: 464px; */
-    background: red;
+    /* background: red; */
     /* position: absolute; */
     /* left: 50%; */
     /* top: 50%; */
@@ -76,44 +84,38 @@
   .box{
     width: 100vw;
     height: 100vh;
-    position: relative;
   }
 
   .title02{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 65%;
     translate:-50% -50%;
 
   }
 
-  .subtitle02{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
-  }
+
   
   .side02{
     position: absolute;
     right: -4%;
-    top: -3%;
+    top: 0%;
   }
 
   .side03{
     position: absolute;
     left: -4%;
-    bottom: 0;
+    top: 50%;
   }
 
-  .sub02{
+  .sub2{
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 20%;
     translate:-50% -50%;
   }
 
-  .sub02-2{
+  .sub2-2{
     position: absolute;
     left: 50%;
     top: 15%;
@@ -123,7 +125,7 @@
   .cards{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 65%;
     translate:-50% -50%;
   }
   .image01{
@@ -164,7 +166,9 @@
   } */
 
 
+
   .main03{
+    position: absolute;
     transform:scale(0.4);
     /* width: 100%;
     height: 100%; */
@@ -176,7 +180,6 @@
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.9);
     opacity: 0;
   }
 
@@ -199,61 +202,62 @@
   .typo01{
     position: absolute;
     left: 50%;
-    top: 8%;
+    top: -40%;
     translate:-50% -50%;
-    transform: scale(0.9);
   }
 
   .vertical01{
     position: absolute;
-    left: 8%;
-    bottom: 40%;
+    left: 17%;
+    top: -20%;
   }
 
   .bottom01{
     position: absolute;
     right: 5%;
-    bottom: 24%;
+    top: 10%;
   }
+
+
 
   .main04-1{
     position: absolute;
-    right: 5%;
-    top: 12%;
+    left: 27%;
+    top: -35%;
 
   }
 
   .main04-2{
     position: absolute;
-    left: 7%;
-    top: 80%;
+    left: 10%;
+    top: 30%;
   }
 
   .main04-3{
     position: absolute;
-    left: 50%;
-    bottom: -115%;
-    translate:-50% -50%;
+    right: 15%;
+    bottom: -35%;
+
 
   }
 
   .black01{
     position: absolute;
     left: 5%;
-    bottom: 27%;
+    top: 10%;
   }
 
   .black02{
     position: absolute;
     right: 5% ;
-    bottom: -42%;
+    top: 75%;
 
   }
 
   .black03{
     position: absolute;
     left: 50%;
-    bottom: -110%;
+    bottom: -60%;
     translate:-50% -50%;
 
   }
@@ -348,7 +352,7 @@
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.88);
+
   }
 
   .typo06{
@@ -373,10 +377,10 @@
   height: 100vh;
   position: relative;
 
-  .main07{
+  .main07-1{
     position: absolute;
     left: 100%;
-    top: 45%;
+    top: 50%;
     translate:-50% -50%;
 
     transform: scale(0.7);
@@ -387,21 +391,21 @@
     left: 50%;
     top: 14%;
     translate:-50% -50%;
-    transform: scale(0.9);
+
   }
 
   .side7-2{
     position: absolute;
-    left: 27%;
-    bottom: 42%;
+    left: 37%;
+    bottom: 37%;
     transform: scale(0.75);
 
   }
 
   .side7-3{
     position: absolute;
-    left: 33%;
-    bottom: 33%;
+    left: 42%;
+    bottom: 30%;
     transform: scale(0.75);
 
   }
@@ -444,8 +448,8 @@
 
   .circle{
     position: absolute;
-    left: -34%;
-    top: 11%;
+    left: -37%;
+    top: 20%;
     /* 
     left: 50%;
     top: 78%;
@@ -453,16 +457,12 @@
 
     clip-path: circle(5%);
 
-    img{
-      /* transform:scale(0.2) */
-    }
-
   }
 
   .type8{
     position: absolute;
-    left: 50%;
-    top: 77%;
+    left: 25%;
+    top: 50%;
     translate:-50% -50%;
 
   }
@@ -508,19 +508,19 @@
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    transform: scale(0.9);
+
   }
 
   
 
-  .mainimge9-1{
+  .mainiamge9-1{
     position: absolute;
     left: 50%;
     top: 50%;
     translate:-50% -50%;
   }
 
-  .mainimge9-2{
+  .mainiamge9-2{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -559,7 +559,90 @@
 
 .section10{
   background-color: black;
-  height: 400vh;
+  height: 100vh;
+  position: relative;
+
+  .main10-1{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    translate:-50% -50%;
+  }
+
+  .mini10{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+
+  }
+
+  .left10{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+
+  }
+
+  .right10{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+
+  }
+
+  .button10{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+  }
+
+
+
+  
+
+}
+
+
+.section11{
+  background-color: black;
+  height: 200vh;
+  position: relative;
+
+  .main11-1{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    translate:-50% -50%;
+  }
+
+  .main11-2{
+    position: absolute;
+    right: 10%;
+    top: 63%;
+    translate:-50% -50%;
+  }
+
+  .linetypo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+  }
+
+  .polygon{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    translate:-50% -50%;
+  }
+
+  .button11{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    translate:-50% -50%;
+  }
+
 
 
   
