@@ -150,7 +150,7 @@
 
 .section03{
   background-color: #ebe5de;
-  height: 400vh;
+  height: initial;
   /* height: 200vh; */
 
   .box03{
@@ -188,12 +188,11 @@
 
 .section04{
   background-color: #ebe5de;
-  height: 400vh;
+  height: initial;
 
 
   .box04{
     width: 100vw;
-    height: 100vw;
     background-color: #ebe5de;
     position: relative;
     
@@ -202,14 +201,14 @@
   .typo01{
     position: absolute;
     left: 50%;
-    top: -40%;
-    translate:-50% -50%;
+    top: 0;
+    translate:-50% 0;
   }
 
   .vertical01{
     position: absolute;
     left: 17%;
-    top: -20%;
+    top: 0;
   }
 
   .bottom01{
@@ -218,25 +217,34 @@
     top: 10%;
   }
 
+  .imagebox{
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    gap:10rem;
+    padding-top: 100px;
+  
+  }
 
 
   .main04-1{
-    position: absolute;
-    left: 27%;
-    top: -35%;
+    /* margin-left */
+    /* position: absolute; */
+    /* left: 27%; */
+    /* top: -35%; */
 
   }
 
   .main04-2{
-    position: absolute;
-    left: 10%;
-    top: 30%;
+    /* position: absolute; */
+    /* left: 10%; */
+    /* top: 30%; */
   }
 
   .main04-3{
-    position: absolute;
-    right: 15%;
-    bottom: -35%;
+    /* position: absolute; */
+    /* right: 15%; */
+    /* bottom: -35%; */
 
 
   }
@@ -412,10 +420,10 @@
 
   .linetype{
     position: absolute;
-    left: 50%;
+    left: 0;
     bottom: 0;
-    translate:-50% -50%;
-    transform: scale(0.6);
+    /* translate:-50% -50%; */
+    /* transform: scale(0.6); */
   }
 
 }
@@ -456,6 +464,10 @@
     translate:-50% -50%; */
 
     clip-path: circle(5%);
+    
+    img{
+      filter:brightness(0.5)
+    }
 
   }
 
@@ -472,87 +484,87 @@
 .section09{
   background-color: #ebe5de;
   /* height: 400vh; */
-  height: 1560px;
+  height: initial;
   position: relative;
 
   .bgimage9-1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* translate:-50% -50%; */
 
   }
 
   .bgimage9-2{
-    position: absolute;
-    right: 0;
-    top: 10%;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 10%; */
 
   }
 
   .bgimage9-3{
-    position: absolute;
-    left: 0;
-    bottom: 10%;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 10%; */
   }
 
   .type9-1{
-    position: absolute;
-    left: 50%;
-    top: 8%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 8%; */
+    /* translate:-50% -50%; */
   }
 
   .type9-2{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* translate:-50% -50%; */
 
   }
 
   
 
   .mainiamge9-1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* translate:-50% -50%; */
   }
 
   .mainiamge9-2{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* translate:-50% -50%; */
   }
 
   .title9-1{
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* bottom: 20%; */
+    /* translate:-50% -50%; */
   }
 
   .title9-2{
-    position: absolute;
-    left: 50%;
-    bottom: 33%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* bottom: 33%; */
+    /* translate:-50% -50%; */
   }
 
   .title9-3{
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 45%; */
+    /* translate:-50% -50%; */
   }
 
   .title9-4{
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    translate:-50% -50%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 30%; */
+    /* translate:-50% -50%; */
   }
 
 }
